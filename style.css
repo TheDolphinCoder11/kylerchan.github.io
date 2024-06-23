@@ -165,5 +165,6 @@
     .boton-elegante:hover {
       border-color: #666666;
       background: #007BFF;
+      cursor: pointer;
     }
 }
