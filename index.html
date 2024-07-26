@@ -18,15 +18,15 @@
     <div id = "a-bit-about-myself">
 
         <h2>I am a...</h2>
-        <h2>💭 Thinker</h2>
-        <h2>🧭 Explorer</h2>
-        <h2>🧑‍💻 Coder</h2>
-        <h2>My Dream Job Is to become a Front-End Web Developer</h2>
+        <h2 id="thinker">💭 Thinker</h2>
+        <h2 id="explorer">🧭 Explorer</h2>
+        <h2 id="coder">🧑‍💻 Coder</h2>
+        <h2>My Dream Job Is to become a <span id="front-end">Front-End Web Developer</span></h2>
         
         <br>
         
         <h2>My Primary School is <a href="https://www.henryparkpri.moe.edu.sg/" target = "_blank">Henry Park Primary School</a></h2>
-        <h2>I study at <a href="https://www.sji-international.com.sg/" target = "_blank">St Joseph's Institution International</a></h2>
+        <h2>I study at <a href="https://www.sji.edu.sg/" target = "_blank">St Joseph's Institution International</a></h2>
         <h2>More info on where I study will be coming out so stay tuned!</h2>
 
         <br>
@@ -35,7 +35,7 @@
         <h2>I am a Singaporean.</h2>
 
         <br>
-<!-- h1 -->  
+<!-- h1 -->
         
     </div>   
 
@@ -46,10 +46,9 @@
         <hr>
 
         <div id = "translator">
-
             <h2>Translator v1</h2>
             <h2>Languages: Python</h2>
-            <a href="https://github.com/TheDolphinCoder11/translator" target="_blank">Click Me To Access!</a>
+            <a href="https://github.com/TheDolphinCoder11/translator" target="_blank">Access Translator</a>
         </div>
 
         <hr>
@@ -57,7 +56,7 @@
         <div id = "randomnumbergenerator">
             <h2>randomnumbergenerator v1</h2>
             <h2>Languages: HTML, CSS, JS</h2>
-            <a href="https://github.com/TheDolphinCoder11/randomnumbergenerator" target = "_blank">Click Me To Access!</a>
+            <a href="https://github.com/TheDolphinCoder11/randomnumbergenerator" target = "_blank">Access randomnumbergenerator</a>
         </div>
 
         <hr>
@@ -65,7 +64,7 @@
         <div id = "ponggame">
             <h2>Pong Game</h2>
             <h2>Languages: Python</h2>
-            <a href = "https://github.com/TheDolphinCoder11/PongGame" target = "_blank">Click Me to Access!</a>
+            <a href = "https://github.com/TheDolphinCoder11/PongGame" target = "_blank">Access PongGame</a>
         </div>
 
         <hr>
@@ -73,23 +72,28 @@
         <div id = "tictactoe">
             <h2>Tic Tac Toe</h2>
             <h2>Langauges: HTML, CSS, JS</h2>
-            <a href = "https://github.com/TheDolphinCoder11/tictactoe">Click Me to Access!</a>
+            <a href = "https://github.com/TheDolphinCoder11/tictactoe">Access tictactoe</a>
         </div>
     </div>
 
     <div id = "socials">
         <h2>Contact Me</h2>
+        
         <hr>
-        <h2 id = "instagramSocial"> Instagram: <a href="https://instagram.com/kylerissocool11" target="_blank">Click Me!</a></h2>
-        <h2 id = "emailSocial"> Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kyler.chanpinhan@gmail.com" target="_blank">Click Me!</a></h2>
-        <h2 id = "githubSocial"> GitHub: <a href="https://github.com/TheDolphinCoder11" target="_blank">Click Me!</a></h2>
-        <h2 id = "threadsSocial">Threads: <a href="https://www.threads.net/@kylerissocool11" target="_blank">Click Me!</a></h2>
+
+        <div id="socialLinks">
+            <button class="socials">GitHub</button>
+            <button onclick="openInstagram()" class="socials">Instagram</button>
+            <button onclick="openGmail()" class="socials">Gmail</button>
+            <button  onclick="openThreads()" class="socials">Threads</button>
+        </div>
+
     </div>
 
     <div id = "certifications">
         <h2>Click Below to view some of my certificates!</h2>
-        <a href="./certifications.html">View Certifications</a>
-    </div> 
+        <a href="./certifications.html">Access Certifications </a>
+    </div>
 </body>
 <script type="text/javascript">
     (function(d, t) {
@@ -103,5 +107,6 @@
         }
         v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
     })(document, 'script');
-</script>
+  </script>
+  <script src="./script.js"></script>
 </html>
