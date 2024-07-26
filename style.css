@@ -9,7 +9,6 @@
         text-align: center;
         min-height: 100vh;
         font-size: x-large;
-        
     }
     
     .container {
@@ -24,20 +23,20 @@
         transition: color 0.5s ease;
     }
     
-    #a-bit-about-myself, #projects, #socials, #blogs, #certifications, #py, #css, #html, #redirect, #js, #close-tab {
+    #a-bit-about-myself, #projects, #socials, #blogs, #certifications, #py, #css, #html, #redirect {
         background-color: #fff;
         border-radius: 8px;
-        box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) ;
-        padding: 20px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
         margin-bottom: 20px;
-        transition: box-shadow 1s ease, transform 1s ease;
+        transition: box-shadow 0.5s ease, transform 0.5s ease;
     }
     
     #projects {
         text-align: center;
     }
     
-    #a-bit-about-myself:hover, #projects:hover, #contact-me:hover,#socials:hover, #blogs:hover, #certifications:hover, #section:hover, #py:hover, #css:hover,#js:hover , #html:hover, #redirect:hover {
+    #a-bit-about-myself:hover, #projects:hover, #contact-me:hover,#socials:hover, #blogs:hover, #certifications:hover, #section:hover, #py:hover, #css:hover, #html:hover, #redirect:hover {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         transform: scale(1.02);
     }
@@ -109,21 +108,37 @@
     img {
         width: 700px;
         height: 500px;
-    }
 
-    #certs, #self-detruct {
-        background-color: lightgray;
-        padding: 10px;
-        border-radius: 10px;
-        color: black;
-        text-decoration: none;
     }
+}
 
-    #self-detruct:hover {
-        box-shadow: 10px;
-    }
+button.socials {
+    padding: 15px 30px;
+    border-radius: 24px;
+    background-color: #4da3ff;
+    color: white;
+    margin: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
 
-    a {
-        cursor: pointer !important;
-    }
+button.socials:hover { 
+    cursor: pointer;
+    background-color: #357ABD;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    font-family: monospace;
+}
+
+button.socials:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#socialLinks {
+    padding: 10px;
+    align-items: center;;
 }
