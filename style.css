@@ -9,6 +9,7 @@
         text-align: center;
         min-height: 100vh;
         font-size: x-large;
+        animation: fade-in-right 1.0s;
     }
     
     .container {
@@ -23,7 +24,7 @@
         transition: color 0.5s ease;
     }
     
-    #a-bit-about-myself, #projects, #socials, #blogs, #certifications, #py, #css, #html, #redirect {
+    #a-bit-about-myself, ul, #projects, #socials, #blogs, #certifications, #py, #css, #html, #redirect {
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -36,7 +37,7 @@
         text-align: center;
     }
     
-    #a-bit-about-myself:hover, #projects:hover, #contact-me:hover,#socials:hover, #blogs:hover, #certifications:hover, #section:hover, #py:hover, #css:hover, #html:hover, #redirect:hover {
+    #a-bit-about-myself:hover, ul, #projects:hover, #contact-me:hover,#socials:hover, #blogs:hover, #certifications:hover, #section:hover, #py:hover, #css:hover, #html:hover, #js-hover, #redirect:hover {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         transform: scale(1.02);
     }
@@ -140,5 +141,65 @@ button.socials:active {
 
 #socialLinks {
     padding: 10px;
-    align-items: center;
+    align-items: center;;
+}
+
+@keyframes fade-in-right {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.li {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav {
+    position: sticky;
+    z-index: 99;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 100px;
+    top: 0px;
+    opacity: 60%;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 60%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+nav:hover {
+    animation: opacity;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+a:hover {
+    cursor: pointer;
 }
